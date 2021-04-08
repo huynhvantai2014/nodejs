@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Elastic Beanstalk</title>
+    <style>
+      body {
+        color: #ffffff;
+        font-family: Arial, sans-serif;
+        font-size:14px;
+        -moz-transition-property: text-shadow;
+        -moz-transition-duration: 4s;
+        -webkit-transition-property: text-shadow;
+        -webkit-transition-duration: 4s;
+        text-shadow: none;
+      }
+      body.blurry {
+        -moz-transition-property: text-shadow;
+        -moz-transition-duration: 4s;
+        -webkit-transition-property: text-shadow;
+        -webkit-transition-duration: 4s;
+        text-shadow: #fff 0px 0px 25px;
+      }
+      a {
+        color: #55aaff;
+      }
+      .textColumn, .linksColumn {
+        padding: 2em;
+      }
+      .textColumn {
+        position: absolute;
+        top: 0px;
+        right: 50%;
+        bottom: 0px;
+        left: 0px;
+
+        text-align: right;
+        padding-top: 11em;
+        background-color: #73A53E;
+
+      }
+      .textColumn p {
+        width: 75%;
+        float:right;
+      }
+      .linksColumn {
+        position: absolute;
+        top:0px;
+        right: 0px;
+        bottom: 0px;
+        left: 50%;
+
+        background-color: #33342D;
+      }
+
+      h1 {
+        color: #33342D;
+        font-size: 500%;
+        font-weight: normal;
+        margin-bottom: 0em;
+      }
+      h2 {
+        font-size: 200%;
+        font-weight: normal;
+        margin-bottom: 0em;
+      }
+      ul {
+        padding-left: 1em;
+        margin: 0px;
+      }
+      li {
+        margin: 1em 0em;
+      }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown link
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </head>
+  <body>
+    <div class="textColumn">
+      <h1>Welcome AWS</h1>
+      <p>Admin Huynh Van Tai</p>
+      <p>This environment is launched with Elastic Beanstalk Node.js Platform</p>
+    </div>
+    <div class="linksColumn">
+      <h2>What's Next?</h2>
+      <ul>
+        <li><a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/Welcome.html">AWS Elastic Beanstalk overview</a></li>
+        <li><a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/concepts.html">AWS Elastic Beanstalk concepts</a></li>
+        <li><a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_nodejs_express.html">Deploy an Express Application to AWS Elastic Beanstalk</a></li>
+        <li><a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_nodejs_express_elasticache.html">Deploy an Express Application with Amazon ElastiCache to AWS Elastic Beanstalk</a></li>
+        <li><a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_nodejs_geddy_elasticache.html">Deploy a Geddy Application with Amazon ElastiCache to AWS Elastic Beanstalk </a></li>
+        <li><a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_nodejs_custom_container.html">Customizing and Configuring a Node.js Container </a></li>
+        <li><a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/using-features.loggingS3.title.html">Working with Logs</a></li>
+      </ul>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+  </body>
+
+</html>
